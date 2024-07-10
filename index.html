@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/af96f23c39.js" crossorigin="anonymous"></script>
+    <title>Rachador de gasolina</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Rachador de combustível</h2>
+            <form>
+                <label>Combustível</label>
+                <div class="custom-select">
+                    <div class="custom-select-trigger"><span>
+                        Selecione
+                    </span> <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="custom-options">
+                        <!--  -->
+                    </div>
+                </div>
+                
+                <label for="km-litro">Consumo do carro</label>
+                <div class="field">
+                    <input type="number" name="km-litro" id="km-litro" placeholder="Ex: 10.5">
+                    <i class="fa-solid fa-gauge"></i>
+                </div>
+                
+                <label for="distance">Distância (Km)</label>
+                <div class="field">
+                    <input type="number" name="distance" id="distance" placeholder="Ex: 6">
+                    <i class="fa-solid fa-road"></i>
+                </div>
+
+                <label for="num-people">Número de pessoas</label>
+                <div class="field">
+                    <input type="number" name="num-people" id="num-people" placeholder="Ex: 4">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+            </form>
+        </div>
+        <div class="total-container">
+            <div class="result-container">
+                <div class="results">
+                    <div>
+                        <h3>Total</h3>
+                        <p>/carro</p>
+                    </div>
+                    <div class="value">
+                        R$<span id="total-value">00.00</span>
+                    </div>
+                </div>
+                <div class="results">
+                    <div>
+                        <h3>Valor</h3>
+                        <p>/pessoa</p>
+                    </div>
+                    <div class="value">
+                        R$<span id="person-value">00.00</span>
+                    </div>
+                </div>
+            </div>
+            <button class="reset"><span>REINICIAR</span></button>
+        </div>
+    </div>
+    <footer>
+        Para conhecer mais, acesse o <a href="https://github.com/rickkruiv" target="_blank">GitHub.</a>
+    </footer>
+</body>
+</html>
